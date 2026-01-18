@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Khaled - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-[#0a0a0f] text-white font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-end h-16">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#work" class="text-gray-300 hover:text-white transition">Work</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                    <!-- <button id="theme-toggle"
+                        class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-gray-400 transition">
+                        <i class="fas fa-sun text-sm"></i>
+                    </button> -->
+                    <!-- <button
+                        class="download-cv-btn px-4 py-2 bg-white text-gray-900 rounded-lg hover:bg-gray-400 transition font-medium">
+                        Download CV
+                    </button> -->
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden fixed inset-y-0 right-0 w-3/4 bg-[#0a0a0f] border-l border-gray-800 z-50">
+            <div class="flex flex-col h-full p-6">
+                <div class="flex justify-end items-center mb-8">
+                    <button id="close-menu" class="text-white">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col space-y-6">
+                    <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+                    <a href="#work" class="text-gray-300 hover:text-white transition">Work</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-300">Switch Theme</span>
+                        <!-- <button id="theme-toggle-mobile"
+                            class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center">
+                            <i class="fas fa-sun text-sm"></i>
+                        </button> -->
+                    </div>
+                    <!-- <button
+                        class="download-cv-btn px-4 py-2 bg-white text-gray-900 rounded-lg hover:bg-gray-400 transition font-medium text-left">
+                        Download CV
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="space-y-6">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold">
+                        Hi, I'm Omar
+                    </h1>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I’m a Frontend Developer specializing in React.js,
+                        passionate about building fast, accessible, and responsive web applications with a
+                        strong focus on user experience and clean design. I enjoy turning ideas into interactive digital
+                        experiences and continuously improving my skills to stay up to date with modern web
+                        technologies.
+                    </p>
+                    <div class="flex items-center space-x-2 text-gray-300">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Alexandria, Egypt</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-gray-300">Available for new projects</span>
+                    </div>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="https://github.com/omarkhaled003" class="text-gray-400 hover:text-white transition"
+                            target="_blank"><i class="fab fa-github text-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/omar-khaled-3807a8281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="text-gray-400 hover:text-white transition" target="_blank"><i
+                                class="fab fa-linkedin text-2xl"></i></a>
+
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="./assets/images/Omar-1.jpeg" alt="Omar Khaled's photo"
+                            class="w-full max-w-md mx-auto rounded-lg">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg blur-2xl transform rotate-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <button class="px-4 py-1 bg-gray-800 rounded-full text-sm mb-4">About me</button>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Curious about me? Here’s my story.</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Image -->
+                <div class="flex justify-center">
+                    <img src="./assets/images/Omar-2.jpeg" alt="Omar Khaled's photo"
+                        class="max-w-md w-full rounded-lg border-2 border-gray-700 object-cover">
+                </div>
+
+                <!-- Right Content -->
+                <div class="space-y-6 text-gray-300">
+                    <p>
+                        I’m a frontend-focused developer with a strong background in React.js and a growing passion for
+                        full-stack development. I care deeply about building pixel-perfect, visually appealing
+                        interfaces with intuitive and accessible user experiences
+                    </p>
+                    <p>
+                        In my spare time, I enjoy working on side projects and experimenting with new ideas. I’ve built
+                        full-stack applications from scratch and love taking a product from concept to production.
+                        Currently, I’m exploring new concepts and quietly working on a few personal projects.
+                    </p>
+                    <p>
+                        I’m genuinely passionate about the JavaScript ecosystem and enjoy learning new tools and
+                        technologies. My current stack includes <strong class="text-white">React.js</strong>, <strong
+                            class="text-white">TypeScript</strong>, <strong class="text-white">Tailwindcss</strong>,
+                        and a bit of <strong class="text-white">Node.js</strong>,
+                    </p>
+                    <div class="pt-4">
+                        <p class="font-semibold text-white mb-3">Finally, some quick bits about me.</p>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="flex items-center">
+                                <span class="text-blue-400 mr-2">•</span>
+                                <span>Computer Science graduate</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 mr-2">•</span>
+                                <span>Full time freelancer</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 mr-2">•</span>
+                                <span>Continuous learner</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-blue-400 mr-2">•</span>
+                                <span>Problem solver with a design mindset</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pt-4">
+                        One last thing, I'm available for freelance work, so feel free to reach out and say hello! I
+                        promise I don't bite
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <button class="px-4 py-1 bg-gray-800 rounded-full text-sm mb-4">Skills</button>
+                <p class="text-lg text-gray-300">The skills, tools and technologies I am really good at:</p>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
+                <!-- JavaScript -->
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-white/10 p-2">
+                        <img src="assets/icons/icon-javscript.png" alt="JavaScript"
+                            class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm text-gray-300">Javascript</span>
+                </div>
+                <!-- React -->
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-white/10 p-2">
+                        <img src="assets/icons/icon-react.png" alt="React" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm text-gray-300">React</span>
+                </div>
+                <!-- Git -->
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-white/10 p-2">
+                        <img src="assets/icons/git.png" alt="Git" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm text-gray-300">Git</span>
+                </div>
+                <!-- Sass -->
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-white/10 p-2">
+                        <img src="assets/icons/sass.png" alt="Sass" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm text-gray-300">Sass/Scss</span>
+                </div>
+                <!-- Tailwind -->
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-white/10 p-2">
+                        <img src="assets/icons/Tailwind.png" alt="Tailwind CSS" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm text-gray-300">Tailwindcss</span>
+                </div>
+                <!-- Figma -->
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="w-16 h-16 rounded-lg flex items-center justify-center bg-white/10 p-2">
+                        <img src="assets/icons/icon-figma.png" alt="Figma" class="w-full h-full object-contain">
+                    </div>
+                    <span class="text-sm text-gray-300">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <button class="px-4 py-1 bg-gray-800 rounded-full text-sm mb-4">Experience</button>
+                <p class="text-lg text-gray-300">Here is a quick summary of my most recent experiences:</p>
+            </div>
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <!-- Experience 1 -->
+                <div class="bg-gray-800/50 rounded-lg p-6 border border-gray-700">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                        <div class="flex-1">
+                            <div class="text-blue-400 font-semibold mb-2">Information Technology Institute (ITI)</div>
+                            <h3 class="text-xl font-bold mb-2">Internship focusing on front-end development skills</h3>
+                            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                                <li>Completed a set of practical tasks during a front-end development internship</li>
+                                <li>Focused on improving component structure, state handling, and reusability in React
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-gray-400 text-sm">06/2024 - 07/2024</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <button class="px-4 py-1 bg-gray-800 rounded-full text-sm mb-4">Projects</button>
+                <p class="text-lg text-gray-300">Some of the noteworthy projects I have built:</p>
+            </div>
+            <div class="space-y-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800/50 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <div class="p-4 flex flex-col gap-4 items-center">
+                            <img src="assets/images/Screenshot 2025-06-12 010744.png" alt="Ecofy Dashboard Screenshot 1"
+                                class="max-w-xs w-full rounded-lg border border-gray-700 object-cover">
+                            <img src="assets/images/Screenshot 2026-01-18 105540.png" alt="Ecofy Dashboard Screenshot 2"
+                                class="max-w-xs w-full rounded-lg border border-gray-700 object-cover">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">Ecofy</h3>
+                            <p class="text-gray-300 mb-6">
+                                Built a fully responsive web application designed to help users discover the best
+                                products and efficiently manage their purchases. The application includes an interactive
+                                dashboard that provides detailed reports on purchased items and spending history.
+                                Multiple AI-powered features were implemented, such as an AI chatbot for user
+                                assistance, an AI suggestion system to recommend savings goals based on salary, an AI
+                                receipt scanner to extract data from images, and a product recommendation system that
+                                suggests related items after each purchase. The project focuses on usability,
+                                performance, and a clean, user-friendly interface, and was fully deployed on Vercel.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">html</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">css</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">React</span>
+
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Typescript</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Tailwind</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Git</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Github</span>
+
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <a href="https://graduation-echofi.vercel.app/"
+                                    class="inline-flex items-center text-blue-400 hover:text-blue-300" target="_blank">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    <span>Visit</span>
+                                </a>
+                                <a href="https://github.com/omarkhaled003/Graduation-project"
+                                    class="inline-flex items-center text-blue-400 hover:text-blue-300" target="_blank">
+                                    <i class="fas fa-github mr-2"></i>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-800/50 rounded-lg overflow-hidden border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-0">
+                        <div
+                            class="bg-gradient-to-br from-purple-500/20 to-blue-500/20 p-8 flex items-center justify-center">
+                            <div class="text-center space-y-4">
+                                <h3 class="text-2xl font-bold">Project Preview</h3>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4">Summer Training Project – ITI</h3>
+                            <p class="text-gray-300 mb-6">
+                                Completed a series of practical tasks during a front-end development internship,
+                                focusing on building reusable and well-structured React components. Developed multiple
+                                small applications, including a calculator with basic arithmetic operations, a posts
+                                viewer using dummy API data, a counter application with state management, and a sign-in
+                                form with client-side validation. Gained hands-on experience in React fundamentals such
+                                as component structure, state handling, and reusability.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">html</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">css</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-gray-700 rounded-full text-sm">Typescript</span>
+                            </div>
+                            <a href="https://github.com/omarkhaled003/itiReact"
+                                class="inline-flex items-center text-blue-400 hover:text-blue-300" target="_blank">
+                                <i class="fas fa-external-link-alt mr-2"></i>
+                                <span>Github</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"
+        class="py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-800 bg-gradient-to-b from-[#0a0a0f] to-[#1a0a1a]">
+        <div class="max-w-4xl mx-auto text-center">
+            <button class="px-4 py-1 bg-gray-800 rounded-full text-sm mb-6">Get in touch</button>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">What’s next?
+                Whether you’re looking for a developer, have a project in mind, or just want to connect, feel free to
+                reach out.</h2>
+
+            <div class="mt-12 space-y-6">
+                <!-- Email -->
+                <div class="flex items-center justify-center space-x-4">
+                    <i class="fas fa-envelope text-2xl"></i>
+                    <span class="text-xl">omar.khaled00203@gmail.com</span>
+                    <button class="ml-2 p-2 hover:bg-gray-800 rounded transition"
+                        onclick="copyToClipboard('reachsagarshah@gmail.com')">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-center justify-center space-x-4">
+                    <i class="fas fa-phone text-2xl"></i>
+                    <span class="text-xl">+20 1014026158</span>
+                    <button class="ml-2 p-2 hover:bg-gray-800 rounded transition"
+                        onclick="copyToClipboard('+91 8980500565')">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+
+            <p class="mt-12 text-gray-300">You may also find me on these platforms!</p>
+            <div class="flex justify-center space-x-6 mt-6">
+                <a href="https://github.com/omarkhaled003" class="text-gray-400 hover:text-white transition text-2xl"
+                    target="_blank"><i class="fab fa-github"></i></a>
+
+                <a href="https://www.linkedin.com/in/omar-khaled-3807a8281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    class="text-gray-400 hover:text-white transition text-2xl" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+
+            <footer class="mt-16 text-gray-400 text-sm">
+                © 2023 | Designed and coded by Omar Khaled
+            </footer>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
